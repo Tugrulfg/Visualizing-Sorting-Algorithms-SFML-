@@ -4,53 +4,53 @@
 git config --global user.email "tugrultugrul6@gmail.com"
 git config --global user.name "Tugrulfg"
 	
-git clone<URL>				creates a local copy of existing repository
-	
-git init				makes current directory a Git repository
+git clone<URL>					creates a local copy of existing repository
+		
+git init					makes current directory a Git repository
 
 	
 				SAVING CHANGES
 
-git add <files>			add defined file to staging area
-git add .				add all files to staging area
+git add <files>				add defined file to staging area
+git add .					add all files to staging area
 
-git commit -m "Commit Message"	saves tracked changes in the form of a commit	(local)
+git commit -m "Commit Message"		saves tracked changes in the form of a commit	(local)
 
 
 				UNDOING CHANGES
 
-git checkout <commit> -- .		return to a version
+git checkout <commit> -- .			return to a version
 
-git checkout -- <file-name>		we return file from staging area 
+git checkout -- <file-name>			we return file from staging area 
 
-git reset HEAD <filename>		pull out file from staging area
+git reset HEAD <filename>			pull out file from staging area
 
-git reset --hard HEAD~1		undo last commit locally
+git reset --hard HEAD~1			undo last commit locally
 	
-git revert <commit>			undo a commit by creating a new commit	(HEAD~n -->nth last commit)
+git revert <commit>				undo a commit by creating a new commit	(HEAD~n -->nth last commit)
 
 
 				OTHER USEFUL COMMANDS
 	
-git status				displays state of repository and staging area
+git status					displays state of repository and staging area
 
-git log				displays log of previous commits in the current checked-out branch
+git log					displays log of previous commits in the current checked-out branch
 
-git diff				displays changes made
+git diff					displays changes made
 
 -----------------------------------------------------------------------------------------------------------------------
 
-git pull				merge remote repository codes into local repository
+git pull					merge remote repository codes into local repository
+	
+git branch <branch-name>			creates a branch
 
-git branch <branch-name>		creates a branch
+git checkpoint -b <branch-name>		creates and switches to the new branch
 
-git checkpoint -b <branch-name>	creates and switches to the new branch
+git checkpoint <branch-name>			switches to the new branch
 
-git checkpoint <branch-name>		switches to the new branch
+git remote add origin <URL>		
 
-git push -u origin <branch-name>	pushing a new branch for the first time
-
-
+git push -u origin <branch-name>     	pushing a new branch for the first time 
 
 
 
