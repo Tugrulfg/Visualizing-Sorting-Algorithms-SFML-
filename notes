@@ -16,10 +16,12 @@ git add .				add all files to staging area
 
 git commit -m "Commit Message"	saves tracked changes in the form of a commit	(local)
 
-git push -u origin <branch-name>	pushes local commits to remote repository
-
 
 				UNDOING CHANGES
+
+git checkout <commit> -- .		return to a version
+
+git checkout -- <file-name>		we return file from staging area 
 
 git reset HEAD <filename>		pull out file from staging area
 
